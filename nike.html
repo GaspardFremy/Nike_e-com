@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nike Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="nike.css" />
+     <link rel="stylesheet" href="swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700" rel="stylesheet"> 
+    <link href="DINNextLTPro-MediumCond.otf" rel="stylesheet"> 
+</head>
+
+<body>
+    
+<div id="windows">
+
+<div id="block1">
+    <div id="header">
+        <img id="logo" src="images/logo.png">
+        <div id="left-nav">
+            <ul> 
+                <li> <a href="#footwear">FOOTWEAR</a></li>
+                <li> <a href="#clothing">CLOTHING</a></li>
+                <li> <a href="#Accessories">ACCESSORIES</a></li>
+                <li> <a href="#Brands">BRANDS</a></li>
+                <li> <a href="Exclusive">EXCLUSIVE</a></li>
+            </ul>
+        </div>
+        <div id="right-nav">
+            <ul>
+                <li><img class="icone" src="images/icones/search.png">SEARCH</li>
+                <li><img class="icone" src="images/icones/shop.png">CART</li>
+                <li><img class="icone" src="images/icones/pp.png">SIGN IN</li>
+            </ul>
+        </div>
+        <div id="product_img">
+            <img id="pink_shoe" src="images/shoe.png">
+            <img id="rasta_shoe" src="images/shoe_color.png">
+        </div>
+        <div id="product_info">
+            <img id="wish" src="images/wish.png">
+            <img id="wish-liked" src="images/wish-liked.png">
+            <h1>NIKE</h1>
+            <h2>AIR MAX TAVAS SD</h2>
+            <h6> $ 160.00 </h6>
+            <h3>COLORS  -  </h3><p id="black_pink">BLACK/PINK POW/TOUR YELLOW/WHITE</p>
+            </br>
+            <img id="mini-shoe1" src="images/mini-shoe2.png">
+            <img id="mini-shoe2" src="images/mini-shoe.png">
+            <h5>Size Charts</h5>
+            <div id="select-size">
+                <select>
+                    <option>SIZE</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                    <option>43</option>
+                    <option>44</option>
+                    <option>45</option>
+                </select>
+            </div>
+            <div id="add_to_carte">ADD TO CARTE</div>
+        </div>
+    </div>
+</div>
+
+
+<div id=block2> 
+    <div id="text">
+        <h1>CLASSIC CUSHIONING. MODERN COMFORT. </h1>
+        <h2>The Nike Air Max Tavas SD Men's Shoe recalls the profile of the iconic running original with a Max Air unit in the heel and multi-surface Waffle outsole. A lightweight upper and gradient detail offer a comfortable fit and dynamic look.</h2>
+    </div>
+</div>
+   
+<div id=block3> 
+        <div id="text2">
+            <h6>STORY</h6>
+            <h1>NIKE AIR ORIGIN</h1>
+            <h5>Nike's revolutionary Air-Sole unit made its way into Nike footwear in the late '70s. In 1987, the Nike Air Max 1 debuted with visible air in its heel, allowing fans more than just the feel of Air-Sole comfort</h5>
+            <h6>BENEFITS</h6>
+            <p class="benefits">LAYERED TEXTILE/SYNTHETIC UPPER</p>
+            <p class="detail">for lightweight durability and comfort</p>
+            
+            <p class="benefits">INJECTED PHYLON MIDSOLE DOUBLES</p>
+            <p class="detail">Outsole to reduce the overall weight of the shoe </p>
+            
+            <p class="benefits">MAX AIR HEEL UNIT</p>
+            <p class="detail">delivers maximum lightweight cushioning </p>
+            
+            <p class="benefits">RUBBER WAFFLE OUTSOLE </p>
+            <p class="detail">Durable, multi-surface traction</p>
+            
+        </div>
+        <div id="box">
+            <p>NIKE</p>
+            <p>Air max Tavas SD</p>
+            <p id="color_box"> Black/Pink Pow/Tour Yellow/White </p>
+            <img id="shoe_box" src="images/shoe_box.png">
+            <p>EN STOCK</p>
+            <p>$160.00</p>
+            <p>Size Charts</p>
+            <div id="select-size">
+                <select>
+                    <option>SIZE</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                    <option>43</option>
+                    <option>44</option>
+                    <option>45</option>
+                </select>
+            </div>
+            <div id="add_to_carte">ADD TO CARTE</div>
+        </div>
+    </div>
+
+<div id="block4">
+
+    <div id="text3">
+        <h1>SOCIAL</h1>
+        <h2>#NIKEAIRMAX</h2>
+    </div>
+    
+    <div id="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src='images/swiper1.png'></div>
+                <div class="swiper-slide"><img src='images/swiper2.png'></div>
+                <div class="swiper-slide"><img src='images/swiper3.png'></div>
+                <div class="swiper-slide"><img src='images/swiper4.png'></div>
+                <div class="swiper-slide"><img src='images/swiper1.png'></div>
+                <div class="swiper-slide"><img src='images/swiper2.png'></div>
+                <div class="swiper-slide"><img src='images/swiper3.png'></div>
+                <div class="swiper-slide"><img src='images/swiper4.png'></div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div id="swiper-pagination-center" class="swiper-pagination"></div>
+    </div>
+       
+</div>
+</div>
+
+ <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+    <script src="nike.js"></script> 
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 4,
+        centeredSlides: false,
+        paginationClickable: true,
+        spaceBetween: 5
+    });
+    </script>    
+
+</body>
+
+</html> 
