@@ -34,7 +34,6 @@ body {
     padding-bottom: 41px;
     padding-left: 0px;
     margin: 0px;
-    
 }
 
 #header ul li {
@@ -50,8 +49,7 @@ body {
     text-decoration: none;
     color: black;
     border-bottom: 4px solid transparent;
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px;    
 }
 
 #header ul li a:hover {
@@ -59,11 +57,13 @@ body {
     border-bottom-color: #0089cf;
     color: #0089cf;
     margin-bottom: 30px;
+    transition: .3s;
 }
 
 #header ul li:hover {
     
     color: #0089cf;
+    
 }
 
 #right-nav {
@@ -196,15 +196,6 @@ body {
     text-align: center;
     vertical-align: center;
 }
-
-aaaa#select-size {
-    float: left;
-    height: 45px;
-    width: 100px;
-    border: 1px solid #e6e6e6;
-    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
-}
-
 
 option {
     font-size: 13px;
@@ -345,7 +336,6 @@ option {
     background-color: white;
     float: right;
     position: absolute;
-    
     top: 100px;
     right: 55px;
     border: 4px solid #e4e4e4;
