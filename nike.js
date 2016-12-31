@@ -83,3 +83,16 @@ jQuery(function($) {
 });
 
 */
+
+/* 
+
+Barème :
+
+respect de la maquette 6 points, 
+Propreté du code 4 points,
+HTML / CSS 6 points,
+JS 3 points,
+Animations / Transition 1 point,
+BONUS 0-2 points (cookies…)
+
+*/
