@@ -46,10 +46,23 @@ $(document).ready(function(){
 // UNDISPLAY SEARCH BOX 
 
 $(document).ready(function(){
-		$("body").click(function(){
-			$("#search_input")
+		$("#search").click(function(){
+			$("#search_input").html("<a><li>SEARCH</a></li>");
 		});
 });
+
+
+// ADD TO CARTE INCREMENT
+
+var test = 0;
+
+$(document).ready(function(){
+		$("#add_to_carte").click(function(){
+        test ++;
+        document.getElementById("articles").innerHTML = test;
+		});
+});
+
 
 
 // FIXED PRODUCT BOX 

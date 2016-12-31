@@ -75,6 +75,16 @@ body {
     padding-right: 12px;
 }
 
+#search_input {
+    padding: 0;
+    margin: 0;
+}
+
+#basket {
+    
+   
+}
+
 /*HEADER*/
 
 /*PRODUCT BLOCK*/
@@ -187,7 +197,8 @@ body {
 }
 
 #add_to_carte {
-    height: 45px;
+    height: 29px;
+    padding-top: 18px;
     width: 100px;
     background-color: #333333;
     float: left;
