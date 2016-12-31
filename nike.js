@@ -50,15 +50,16 @@ $(document).ready(function(){
 		});
 });
 
-
 // ADD TO CARTE INCREMENT
 
-var test = 0;
+var rQuote = "(",
+    lQuote = ")",
+    test = 0 ;
 
 $(document).ready(function(){
-		$("#add_to_carte").click(function(){
+		$(".add_to_carte").click(function(){
             test ++;
-            document.getElementById("articles").innerHTML = test;
+            document.getElementById("articles").innerHTML = rQuote + test + lQuote;
 		});
 });
 
@@ -66,23 +67,62 @@ $(document).ready(function(){
 
 // FIXED PRODUCT BOX 
 /*
+
+function display_box() {
+    
+if (window.pageYOffset >= 670 && window.pageYOffset <= 1391 ){
+    document.getElementById('box').style.position = 'fixed';
+    document.getElementById('box').style.marginRight = '50px';   document.getElementById('box').style.marginTop = '0px';
+    
+    console.log(window.pageYOffset)
+}
+
+    
+if (window.pageYOffset <= 669 || window.pageYOffset >= 1392 ){
+    
+    document.getElementById('box').style.position = 'absolute';
+    document.getElementById('box').style.marginRight = '0px';
+    document.getElementById('box').style.marginTop = '100px';
+    
+    console.log(window.pageYOffset)
+}
+    
+}
+
+setInterval(display_box, 100);
+ $("box").fadeIn().css("position","absolute");
+
+*/
+
 jQuery(function($) {
   function fixDiv() {
     var $cache = $('#box');
-    if ($(window).scrollTop() > 1182 && $(window).scrollTop() < 1400)
-      $cache.css({
+      
+      if ($(window).scrollTop() < 670)
+
+      $cache.fadeOut().css({
+        'position': 'absolute',
+      });
+      
+      
+      
+    else if ($(window).scrollTop() > 670 && $(window).scrollTop() < 1392)
+
+      $cache.fadeIn().css({
         'position': 'fixed',
       });
+      
     else
       $cache.css({
-        'position': 'fixed',
+        'position': 'absolute',
       });
   }
   $(window).scroll(fixDiv);
   fixDiv();
 });
 
-*/
+
+
 
 /* 
 

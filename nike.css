@@ -61,15 +61,11 @@ body {
   box-shadow: 0 0 1px transparent;
   position: relative;
   overflow: hidden;
-    
-    text-decoration: none;
-    color: black;
-    height: 50px;
-    
-    
-   
-    
+  text-decoration: none;
+  color: black;
+  height: 50px;
 }
+
 .underline:before {
   content: "";
   position: absolute;
@@ -79,17 +75,13 @@ body {
   bottom: 0px;
   background: #0089cf;
   height: 4px;
-
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-    
-    
-   
-    color: #0089cf;
+  color: #0089cf;
     /* margin-bottom: 30px; */
 }
 .underline:hover:before, .underline:focus:before, .underline:active:before {
@@ -107,13 +99,19 @@ body {
     float: right;  
 }
 
+#articles {
+    color: #0089cf;
+}
+
 .icone {
+    margin-bottom: 16px;
     padding-right: 12px;
      -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
 }
 
 /* SET ANIMATION ON ICONS */
+
 .icone:hover, .icone:focus, .icone:active {
   -webkit-animation-name: hvr-pulse-grow;
   animation-name: hvr-pulse-grow;
@@ -243,7 +241,7 @@ body {
     padding-bottom: 9px;
 }
 
-#add_to_carte {
+.add_to_carte {
     height: 29px;
     padding-top: 18px;
     width: 100px;
@@ -255,9 +253,9 @@ body {
     vertical-align: center;
 }
 
-#add_to_carte:active {
-    color: #c9c9c9;
+.add_to_carte:active {
     background-color: #4b4b4b;
+    border: 2px solid grey;
 }
 
 option {
@@ -397,6 +395,23 @@ option {
     top: 100px;
     right: 55px;
     border: 4px solid #e4e4e4;
+}
+
+/* ADD SHADOW ON BOX */
+
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 #color_box {
