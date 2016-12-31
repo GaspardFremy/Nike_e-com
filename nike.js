@@ -38,10 +38,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 		$("#search_input").hover(function(){
-			$("#search_input").html("<input type='text' placeholder='blabla'/>").css("transition", "0.9s");
+			$("#search_input").html("<input type='text' placeholder='enter your search'/>").css("transition", "0.9s");
 		});
 });
-
 
 // UNDISPLAY SEARCH BOX 
 
@@ -58,8 +57,8 @@ var test = 0;
 
 $(document).ready(function(){
 		$("#add_to_carte").click(function(){
-        test ++;
-        document.getElementById("articles").innerHTML = test;
+            test ++;
+            document.getElementById("articles").innerHTML = test;
 		});
 });
 

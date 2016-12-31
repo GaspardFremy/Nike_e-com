@@ -61,14 +61,11 @@ body {
 }
 
 #header ul li:hover {
-    
-    color: #0089cf;
-    
+    color: #0089cf; 
 }
 
 #right-nav {
-    float: right;
-    
+    float: right;  
 }
 
 .icone {
@@ -80,17 +77,11 @@ body {
     margin: 0;
 }
 
-#basket {
-    
-   
-}
-
-/*HEADER*/
+/*END HEADER*/
 
 /*PRODUCT BLOCK*/
 
 #product_img {
-    
     float: left;
     width: 66.32%;
     clear: both;
@@ -151,8 +142,6 @@ body {
     color: #666666;
 }
 
-
-
 #product_info h6{
     margin: 0 auto;
     font-size: 15px;
@@ -179,10 +168,6 @@ body {
     color: #43a8dc;
 }
 
-#mini-shoe1 {
-
-}
-
 #mini-shoe2 {
     margin-left: 10px;
 }
@@ -203,9 +188,14 @@ body {
     background-color: #333333;
     float: left;
     margin-left: 10px;
-    color: antiquewhite;
+    color: white;
     text-align: center;
     vertical-align: center;
+}
+
+#add_to_carte:active {
+    color: #c9c9c9;
+    background-color: #4b4b4b;
 }
 
 option {
@@ -214,7 +204,6 @@ option {
     color: #666666;
     font-family: 'Roboto', sans-serif; 
 }
-
 
 #select-size {
     padding: 0;
@@ -225,7 +214,6 @@ option {
     overflow: hidden;
     background-color: #fff;
     float: left;
-
     background: #fff url('images/icones/arrow.png') no-repeat 90% 50%;
 }
 
@@ -244,9 +232,6 @@ option {
     font-weight: 400;
     color: #666666;
 }
-
-
-
 
 /*PRODUCT BLOCK*/
 
@@ -283,7 +268,7 @@ option {
     letter-spacing: 1px;
 }
 
-/*BLOCK 2*/ 
+/*END BLOCK 2*/ 
 
 /*BLOCK 3*/
 
@@ -359,9 +344,10 @@ option {
     display: inline-block;
     color: #43a8dc;
 }
-/*BLOCK 3  670 */ 
 
-/*BLOCK 4*/ 
+/* END BLOCK 3 */ 
+
+/* BLOCK 4 */ 
 
 #block4 {
     background-color: white;
@@ -380,8 +366,6 @@ option {
     color: #868686;
 }
 
-/*BLOCK 4*/ 
-
 #swiper {
     padding-right: 50px;
     padding-left: 50px;
@@ -391,7 +375,7 @@ option {
         width: 100%;
         height: 300px;
         margin: 20px auto;
-    }
+}
 
 .swiper-slide {
         text-align: center;
@@ -415,11 +399,11 @@ option {
 
 .swiper-slide:nth-child(2n) {
         width: 40%;
-    }
+}
 
 .swiper-slide:nth-child(3n) {
         width: 20%;
-    }
+}
 
 #swiper-pagination-center {
     text-align: center;
@@ -427,3 +411,4 @@ option {
     display: none;
 }
 
+/* END BLOCK 4*/ 
