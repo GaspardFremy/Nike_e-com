@@ -1,9 +1,13 @@
 /* font-family: 'Roboto', sans-serif;  */
+
+/* Icones animation, box shadow and the menu hover are taken from https://github.com/IanLunn/Hover */
+
+/* The swiper com from http://idangero.us/swiper/demos/ */
+
 @font-face {
     font-family: DINNextLTPro-MediumCond;
     src: url(DINNextLTPro-MediumCond.otf);
 }
-
 
 /* HEADER */
 
@@ -19,11 +23,30 @@ body {
 }
 
 #logo {
-    padding-top: 21px;
-    padding-left: 21px;
-    padding-right: 28px;
-    padding-bottom: 21px;
+    margin-top: 21px;
+    margin-left: 21px;
+    margin-right: 28px;
+    margin-bottom: 21px;
     float: left;
+}
+
+/* ANIMATION HOVER LOGO */
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 #header ul {
@@ -49,8 +72,7 @@ body {
 }
 
 #header ul li a:hover {
-    
-    transition: .3s;
+    color: #0089cf;
 }
 
 .underline {
@@ -168,28 +190,29 @@ body {
 }
 
 #wish{
-    padding-top: 54px;
-    padding-bottom: 45px;
     display: block;
+    margin-top: 35px;
+    margin-bottom: 45px;
 }
 
 #wish-liked{
-    padding-top: 54px;
-    padding-bottom: 45px;
+    margin-top: 35px;
+    margin-bottom: 45px;
     display: none;
 }
 
 #product_info h1{
     margin: 0 auto;
-    font-size: 20px;
-    font-weight: 600;
+    margin-bottom: -5px;
+    font-size: 26px;
+    font-weight: 300;
     color: #353535;
 }
 
 #product_info h2{
     margin: 0 auto;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 300;
     color: #353535;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -198,21 +221,21 @@ body {
 #product_info h3{
     margin: 0 auto;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 300;
     color: #666666;
 }
 
 #product_info h6{
     margin: 0 auto;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     color: #868686;
 }
 
 #product_info h3 {
     margin: 0 auto;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 300;
     color: #868686;
     display: inline-block;
     clear: both;
@@ -235,27 +258,30 @@ body {
 #product_info h5 {
     margin: 0 auto;
     font-size: 12px;
-    font-weight: 100;
+    font-weight:lighter;
     color: #adadad;
     padding-top: 9px;
     padding-bottom: 9px;
 }
 
-.add_to_carte {
+.add_to_cart {
     height: 29px;
     padding-top: 18px;
     width: 100px;
     background-color: #333333;
     float: left;
     margin-left: 10px;
-    color: white;
+    color: #c9c9c9;
     text-align: center;
     vertical-align: center;
+    letter-spacing: 0.7px;
+    font-weight: 100;
+    font-size: 12px;
 }
 
-.add_to_carte:active {
-    background-color: #4b4b4b;
-    border: 2px solid grey;
+.add_to_cart:hover {
+    background-color: #0089cf;
+    color: white;
 }
 
 option {

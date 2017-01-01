@@ -58,7 +58,8 @@ var rQuote = "(",
 
 $(document).ready(function(){
 		$(".add_to_carte").click(function(){
-            test ++;
+            
+            test ++; 
             document.getElementById("articles").innerHTML = rQuote + test + lQuote;
 		});
 });
@@ -93,6 +94,8 @@ setInterval(display_box, 100);
  $("box").fadeIn().css("position","absolute");
 
 */
+
+// PRODUCT BOX DISPLAY
 
 jQuery(function($) {
   function fixDiv() {
