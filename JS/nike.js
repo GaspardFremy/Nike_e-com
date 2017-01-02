@@ -57,13 +57,11 @@ var rQuote = "(",
     test = 0 ;
 
 $(document).ready(function(){
-		$(".add_to_carte").click(function(){
-            
+		$(".add_to_cart").click(function(){
             test ++; 
             document.getElementById("articles").innerHTML = rQuote + test + lQuote;
 		});
 });
-
 
 
 // FIXED PRODUCT BOX 
@@ -123,7 +121,6 @@ jQuery(function($) {
   $(window).scroll(fixDiv);
   fixDiv();
 });
-
 
 
 

@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: DINNextLTPro-MediumCond;
-    src: url(DINNextLTPro-MediumCond.otf);
+    src: url(../font/DINNextLTPro-MediumCond.otf);
 }
 
 /* HEADER */
@@ -300,7 +300,7 @@ option {
     overflow: hidden;
     background-color: #fff;
     float: left;
-    background: #fff url('images/icones/arrow.png') no-repeat 90% 50%;
+    background: #fff url('../images/icones/arrow.png') no-repeat 90% 50%;
 }
 
 #select-size select {
@@ -325,7 +325,7 @@ option {
 
 #block2 {
     clear: both;
-    background-image: url(images/bg1.png);
+    background-image: url(../images/bg1.png);
     height: 610px;
     position: relative;
 }
@@ -359,7 +359,7 @@ option {
 /*BLOCK 3*/
 
 #block3 {
-    background-image: url(images/shoes2.png);
+    background-image: url(../images/shoes2.png);
     height: 615px;
     position: relative;
 }
