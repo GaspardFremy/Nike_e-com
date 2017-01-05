@@ -63,8 +63,7 @@ $(document).ready(function(){
 		});
 });
 
-
-// FIXED PRODUCT BOX 
+// FIXED PRODUCT BOX JS
 /*
 
 function display_box() {
@@ -97,35 +96,35 @@ setInterval(display_box, 100);
 
 jQuery(function($) {
   function fixDiv() {
+      
     var $cache = $('#box');
       
-      if ($(window).scrollTop() < 670)
-
-      $cache.fadeOut().css({
+    if ($(window).scrollTop() < 540)
+        
+        $cache.fadeOut().css({
         'position': 'absolute',
-      });
-      
-      
-      
-    else if ($(window).scrollTop() > 670 && $(window).scrollTop() < 1392)
+        });
+    
+    else if ($(window).scrollTop() > 540 && $(window).scrollTop() < 1312)
 
-      $cache.fadeIn().css({
+        $cache.fadeIn().css({
         'position': 'fixed',
-      });
+        'right': '94px', 
+        });
       
     else
-      $cache.css({
+        
+        $cache.css({
         'position': 'absolute',
-      });
+        'right': '48px',
+        });
   }
+    
   $(window).scroll(fixDiv);
   fixDiv();
 });
 
-
-
 /* 
-
 Barème :
 
 respect de la maquette 6 points, 
@@ -134,5 +133,4 @@ HTML / CSS 6 points,
 JS 3 points,
 Animations / Transition 1 point,
 BONUS 0-2 points (cookies…)
-
 */

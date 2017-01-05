@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
     <title>Nike Store</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/nike.css" />
-     <link rel="stylesheet" href="CSS/swiper.min.css">
+    <link rel="stylesheet" href="CSS/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700" rel="stylesheet"> 
     <link href="DINNextLTPro-MediumCond.otf" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -13,60 +14,58 @@
 
 <body>
 
-<div id="block1">
-    <div id="header">
-        <img class="hvr-grow" id="logo" src="images/logo.png">
-        <div id="left-nav">
-            <ul> 
-                <li> <a class="underline" href="#footwear">FOOTWEAR</a></li>
-                <li> <a class="underline" href="#clothing">CLOTHING</a></li>
-                <li> <a class="underline" href="#Accessories">ACCESSORIES</a></li>
-                <li> <a class="underline" href="#Brands">BRANDS</a></li>
-                <li> <a class="underline" href="#Exclusive">EXCLUSIVE</a></li>
-            </ul>
+<div id="header">
+    <img class="hvr-grow" id="logo" src="images/logo.png">
+    <div id="left-nav">
+        <ul> 
+            <li> <a class="underline" href="#footwear">FOOTWEAR</a></li>
+            <li> <a class="underline" href="#clothing">CLOTHING</a></li>
+            <li> <a class="underline" href="#Accessories">ACCESSORIES</a></li>
+            <li> <a class="underline" href="#Brands">BRANDS</a></li>
+            <li> <a class="underline" href="#Exclusive">EXCLUSIVE</a></li>
+        </ul>
+    </div>
+    <div id="right-nav">
+        <ul>
+            <li><img class="icone" id="search" src="images/icones/search.png">
+                <a  class="underline" id="search_input">SEARCH </a>
+            </li>
+            <li><img class="icone" src="images/icones/shop.png">
+                <a href="#cart" class="underline">CART </a>
+                <a href="#cart" class="underline" id="basket"><a class="underline" id="articles">(0)</a>
+            </li>
+            <li><img class="icone" src="images/icones/pp.png">
+                <a href="#signin" class="underline">SIGN IN</a>
+            </li>
+        </ul>
+    </div>
+    <div id="product_img">
+         <img id="pink_shoe"  src="images/shoe.png"/>
+         <img id="rasta_shoe" src="images/shoe_color.png"/>
+    </div>
+    <div id="product_info">
+        <img class="hvr-glow" id="wish" src="images/wish.png">
+        <img class="hvr-glow" id="wish-liked" src="images/wish-liked.png">
+        <h1>NIKE</h1>
+        <h2>AIR MAX TAVAS SD</h2>
+        <h6> $ 160.00 </h6>
+        <h3>COLORS  -  </h3><p id="black_pink">BLACK/PINK POW/TOUR YELLOW/WHITE</p>
+        </br>
+        <img id="mini-shoe1" class="hvr-glow" src="images/mini-shoe2.png">
+        <img id="mini-shoe2" class="hvr-glow" src="images/mini-shoe.png">
+        <h5>Size Charts</h5>
+        <div class="hvr-glow" id="select-size">
+            <select>
+                <option>SIZE</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+                <option>44</option>
+                <option>45</option>
+            </select>
         </div>
-        <div id="right-nav">
-            <ul>
-                <li><img class="icone" id="search" src="images/icones/search.png">
-                    <a  class="underline" id="search_input">SEARCH </a>
-                </li>
-                <li><img class="icone" src="images/icones/shop.png">
-                    <a href="#cart" class="underline">CART </a>
-                    <a href="#cart" class="underline" id="basket"><a class="underline" id="articles">(0)</a>
-                </li>
-                <li><img class="icone" src="images/icones/pp.png">
-                    <a href="#signin" class="underline">SIGN IN</a>
-                </li>
-            </ul>
-        </div>
-        <div id="product_img">
-            <img id="pink_shoe" src="images/shoe.png">
-            <img id="rasta_shoe" src="images/shoe_color.png">
-        </div>
-        <div id="product_info">
-            <img class="hvr-glow" id="wish" src="images/wish.png">
-            <img class="hvr-glow" id="wish-liked" src="images/wish-liked.png">
-            <h1>NIKE</h1>
-            <h2>AIR MAX TAVAS SD</h2>
-            <h6> $ 160.00 </h6>
-            <h3>COLORS  -  </h3><p id="black_pink">BLACK/PINK POW/TOUR YELLOW/WHITE</p>
-            </br>
-            <img id="mini-shoe1" class="hvr-glow" src="images/mini-shoe2.png">
-            <img id="mini-shoe2" class="hvr-glow" src="images/mini-shoe.png">
-            <h5>Size Charts</h5>
-            <div class="hvr-glow" id="select-size">
-                <select>
-                    <option>SIZE</option>
-                    <option>40</option>
-                    <option>41</option>
-                    <option>42</option>
-                    <option>43</option>
-                    <option>44</option>
-                    <option>45</option>
-                </select>
-            </div>
-            <div class="add_to_cart">ADD TO CART</div>
-        </div>
+        <div class="add_to_cart">ADD TO CART</div>
     </div>
 </div>
 
@@ -78,54 +77,50 @@
 </div>
    
 <div id=block3> 
-        <div id="text2">
-            <h6>STORY</h6>
-            <h1>NIKE AIR ORIGIN</h1>
-            <h5>Nike's revolutionary Air-Sole unit made its way into Nike footwear in the late '70s. In 1987, the Nike Air Max 1 debuted with visible air in its heel, allowing fans more than just the feel of Air-Sole comfort</h5>
-            <h6>BENEFITS</h6>
-            <p class="benefits">LAYERED TEXTILE/SYNTHETIC UPPER</p>
-            <p class="detail">for lightweight durability and comfort</p>
-            
-            <p class="benefits">INJECTED PHYLON MIDSOLE DOUBLES</p>
-            <p class="detail">Outsole to reduce the overall weight of the shoe </p>
-            
-            <p class="benefits">MAX AIR HEEL UNIT</p>
-            <p class="detail">delivers maximum lightweight cushioning </p>
-            
-            <p class="benefits">RUBBER WAFFLE OUTSOLE </p>
-            <p class="detail">Durable, multi-surface traction</p>
-        </div>
-    
-        <div class="hvr-glow" id="box">
-            <p>NIKE</p>
-            <p>Air max Tavas SD</p>
-            <p id="color_box"> Black/Pink Pow/Tour Yellow/White </p>
-            <img id="shoe_box" src="images/shoe_box.png">
-            <p>EN STOCK</p>
-            <p>$160.00</p>
-            <p>Size Charts</p>
-            <div class="hvr-glow" id="select-size">
-                <select>
-                    <option>SIZE</option>
-                    <option>40</option>
-                    <option>41</option>
-                    <option>42</option>
-                    <option>43</option>
-                    <option>44</option>
-                    <option>45</option>
-                </select>
-            </div>
-            <div class="add_to_cart">ADD TO CART</div>
-        </div>
+    <div id="text2">
+        <h6>STORY</h6>
+        <h1>NIKE AIR ORIGIN</h1>
+        <h5>Nike's revolutionary Air-Sole unit made its way into Nike </br> footwear in the late '70s. In 1987, the Nike Air Max 1 </br> debuted with visible air in its heel, allowing fans more than </br>just the feel of Air-Sole comfort</h5>
+        <h6>BENEFITS</h6>
+        <p class="benefits">LAYERED TEXTILE/SYNTHETIC UPPER</p>
+        <p class="detail">for lightweight durability and comfort</p>
+
+        <p class="benefits">INJECTED PHYLON MIDSOLE DOUBLES</p>
+        <p class="detail">Outsole to reduce the overall weight of the shoe </p>
+
+        <p class="benefits">MAX AIR HEEL UNIT</p>
+        <p class="detail">delivers maximum lightweight cushioning </p>
+
+        <p class="benefits">RUBBER WAFFLE OUTSOLE </p>
+        <p class="detail">Durable, multi-surface traction</p>
     </div>
+    <div class="hvr-glow" id="box">
+        <p id="nike_title">NIKE</p>
+        <p id="model">Air max Tavas SD</p>
+        <p id="color_box"> Black/Pink Pow/Tour Yellow/White </p>
+        <img id="shoe_box" src="images/shoe_box.png">
+        <p id="en_stock">EN STOCK</p>
+        <p id="price">$160.00</p>
+        <div class="hvr-glow" id="select-size">
+            <select>
+                <option>SIZE</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+                <option>44</option>
+                <option>45</option>
+            </select>
+        </div>
+        <div class="add_to_cart">ADD TO CART</div>
+    </div>
+</div>
 
 <div id="block4">
-
     <div id="text3">
         <h1>SOCIAL</h1>
         <h2>#NIKEAIRMAX</h2>
     </div>
-    
     <div id="swiper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -141,16 +136,15 @@
         </div>
         <!-- Add Pagination -->
         <div id="swiper-pagination-center" class="swiper-pagination"></div>
-    </div>
-       
+    </div>   
 </div>
 
  <!-- Swiper JS -->
-    <script src="JS/swiper.min.js"></script>
-    <script src="JS/nike.js"></script> 
+<script src="JS/swiper.min.js"></script>
+<script src="JS/nike.js"></script> 
 
-    <!-- Initialize Swiper -->
-    <script>
+<!-- Initialize Swiper -->
+<script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         slidesPerView: 4,
@@ -158,7 +152,7 @@
         paginationClickable: true,
         spaceBetween: 5
     });
-    </script>    
+</script>    
 
 </body>
 

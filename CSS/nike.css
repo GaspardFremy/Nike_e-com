@@ -65,6 +65,7 @@ body {
     font-weight: 700;
     border-bottom: 2px solid transparent;
     font-family: 'DINNextLTPro-MediumCond';
+    letter-spacing: 1px;
 }
 
 #header ul li a {
@@ -126,8 +127,8 @@ body {
 }
 
 .icone {
-    margin-bottom: 16px;
-    padding-right: 12px;
+    margin-bottom: 14px;
+    padding-right: 5px;
      -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
 }
@@ -181,7 +182,6 @@ body {
     width: 100%;
 }
 
-
 #product_info {
     float: left;
     width: 33.68%;
@@ -204,7 +204,7 @@ body {
 #product_info h1{
     margin: 0 auto;
     margin-bottom: -5px;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 300;
     color: #353535;
 }
@@ -215,44 +215,39 @@ body {
     font-weight: 300;
     color: #353535;
     padding-top: 8px;
-    padding-bottom: 8px;
+    margin-bottom: -2px;
 } 
 
-#product_info h3{
-    margin: 0 auto;
-    font-size: 10px;
-    font-weight: 300;
-    color: #666666;
-}
+
 
 #product_info h6{
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     color: #868686;
 }
 
 #product_info h3 {
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 300;
     color: #868686;
     display: inline-block;
     clear: both;
-    padding-top: 12px;
-    padding-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 10px;
 }
 
 #black_pink {
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 400;
     display: inline-block;
     color: #43a8dc;
 }
 
 #mini-shoe2 {
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
 #product_info h5 {
@@ -260,10 +255,12 @@ body {
     font-size: 12px;
     font-weight:lighter;
     color: #adadad;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 16px;
+    padding-bottom: 11px;
+    font-family: roboto, sans-serif;
 }
 
+/*
 .add_to_cart {
     height: 29px;
     padding-top: 18px;
@@ -283,6 +280,59 @@ body {
     background-color: #0089cf;
     color: white;
 }
+*/
+
+.add_to_cart {
+    height: 29px;
+    padding-top: 18px;
+    width: 100px;
+    background-color: #333333;
+    float: left;
+    margin-left: 10px;
+    color: #c9c9c9;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 0.7px;
+    font-weight: 100;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    }
+
+.add_to_cart:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2098D1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.add_to_cart:hover, .add_to_cart:focus, .add_to_cart:active {
+    color: white;
+}
+.add_to_cart:hover:before, .add_to_cart:focus:before, .add_to_cart:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
 
 option {
     font-size: 13px;
@@ -292,6 +342,7 @@ option {
 }
 
 #select-size {
+    clear: both;
     padding: 0;
     margin: 0;
     height: 45px;
@@ -304,7 +355,7 @@ option {
 }
 
 #select-size select {
-    margin-top: 8px;
+    margin-top: 11px;
     padding: 5px 8px;
     width: 130%;
     border: none;
@@ -314,7 +365,7 @@ option {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 400;
     color: #666666;
 }
@@ -339,19 +390,21 @@ option {
 }
 
 #block2 h1 {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 700;
     color: white;
     width: 100%;
     letter-spacing: 1px;
+    font-weight: lighter;
 }
 
 #block2 h2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 100;
     color: white;
     width: 100%;
     letter-spacing: 1px;
+    font-family: Roboto, sans-serif;
 }
 
 /*END BLOCK 2*/ 
@@ -372,8 +425,8 @@ option {
 
 #text2 h6 {
     margin: 0 auto;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 100;
     color: #868686;
 }
 
@@ -382,45 +435,101 @@ option {
     padding: 0;
     padding-top: 5px;
      margin: 0 auto;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 100;
     color: #353535;
 }
 
 #text2 h5 {
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 100;
     color: #868686;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: Roboto, sans-serif;
+    line-height: 25px;
 }
 
 .benefits {
     font-size: 15px;
     font-weight: 600;
     color: #353535;
-    padding-top: 15px;
+    padding-top: 22px;
     margin: 0;
 }
 
 .detail {
     font-size: 10px;
-    font-weight: 100;
-    color: #353535;
-    padding-top: 10px;
+    font-weight: lighter;
+    color: #868686;
+    padding-top: 0px;
     margin: 0;
+    font-family: Robot, sans-serif;
 }
 
 #box {
-    height: 390px;
-    width: 255px;
+    height: 380px;
+    width: 212px;
     background-color: white;
     float: right;
     position: absolute;
-    top: 100px;
-    right: 55px;
+    top: 199px;
+    right: 48px;
     border: 4px solid #e4e4e4;
+    padding: 27px;
+    padding-top: 0px;
+    
+}
+
+#nike_title {
+    font-weight: 200;
+    font-size: 23px;
+    margin: 0px;
+    margin-top: 17px;
+    font-size: 25px;
+} 
+
+#shoe_box {
+    margin-left: -15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#model {
+    font-family: roboto;
+    font-weight: 100;
+    margin-top: 0px;
+    font-size: 14px;
+    color: #8f8f8f;
+} 
+
+#price {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    float: left;
+    font-size: 18px;
+}
+
+#en_stock {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 121px;
+    display: inline;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#color_box {
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    color: #43a8dc;
 }
 
 /* ADD SHADOW ON BOX */
@@ -440,13 +549,7 @@ option {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-#color_box {
-    margin: 0 auto;
-    font-size: 10px;
-    font-weight: 400;
-    display: inline-block;
-    color: #43a8dc;
-}
+
 
 /* END BLOCK 3 */ 
 
@@ -454,7 +557,7 @@ option {
 
 #block4 {
     background-color: white;
-    height: 500px;
+    height: 520px;
 }
 
 #text3 {
@@ -464,9 +567,19 @@ option {
 
 #text3 h1 {
     margin: 0 auto;
-    font-size: 15px;
+    margin-top: 20px;
+    font-size: 14px;
     font-weight: 700;
     color: #868686;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+
+#text3 h2 {
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    margin-top: 0px;
 }
 
 #swiper {
