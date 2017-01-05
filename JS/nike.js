@@ -63,35 +63,6 @@ $(document).ready(function(){
 		});
 });
 
-// FIXED PRODUCT BOX JS
-/*
-
-function display_box() {
-    
-if (window.pageYOffset >= 670 && window.pageYOffset <= 1391 ){
-    document.getElementById('box').style.position = 'fixed';
-    document.getElementById('box').style.marginRight = '50px';   document.getElementById('box').style.marginTop = '0px';
-    
-    console.log(window.pageYOffset)
-}
-
-    
-if (window.pageYOffset <= 669 || window.pageYOffset >= 1392 ){
-    
-    document.getElementById('box').style.position = 'absolute';
-    document.getElementById('box').style.marginRight = '0px';
-    document.getElementById('box').style.marginTop = '100px';
-    
-    console.log(window.pageYOffset)
-}
-    
-}
-
-setInterval(display_box, 100);
- $("box").fadeIn().css("position","absolute");
-
-*/
-
 // PRODUCT BOX DISPLAY
 
 jQuery(function($) {
