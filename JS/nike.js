@@ -1,18 +1,24 @@
-// DISPLAY PINK SHOE
+// DISPLAY PINK SHOES (USING TOO METHODS : REPLACE URL AND CHANGING THE DISPLAY)
 
 $(document).ready(function(){
 		$("#mini-shoe1").click(function(){
 			$("#rasta_shoe").css("display", "none");
 			$("#pink_shoe").css("display", "block");
+            $('#shoe_box').attr('src','images/shoe_box.png');
+            $('#block2').css('backgroundImage','url(images/bg1.png)');
+            $('#block3').css('backgroundImage','url(images/shoes2.png)');
 		});
 });
 
-// DISPLAY GREEN SHOE
+// DISPLAY GREEN SHOES (USING TOO METHODS : REPLACE URL AND CHANGING THE DISPLAY)
 
 $(document).ready(function(){
 		$("#mini-shoe2").click(function(){
-			$("#rasta_shoe").css("display", "block");
+            $("#rasta_shoe").css("display", "block");
 			$("#pink_shoe").css("display", "none");
+            $('#shoe_box').attr('src','images/shoe_box2.png');
+            $('#block2').css('backgroundImage','url(images/bg2.png)');
+            $('#block3').css('backgroundImage','url(images/shoes3.png)');
 		});
 });
 
@@ -105,3 +111,5 @@ JS 3 points,
 Animations / Transition 1 point,
 BONUS 0-2 points (cookies…)
 */
+
+console.log(window.pageYOffset);
